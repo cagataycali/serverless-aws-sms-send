@@ -10,6 +10,12 @@
     "url": "git://github.com/"
   },
   "dependencies": {
-    "aws-sms-send": "^1.0.6"
-  }
+    "aws-sms-send": "^1.0.6",
+    "snyk": "^1.192.3"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
